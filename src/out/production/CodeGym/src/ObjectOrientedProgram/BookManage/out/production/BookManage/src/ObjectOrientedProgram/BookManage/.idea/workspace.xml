@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8256d9ad-f82f-4cc4-acf3-216ffee8b8ee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ManageStudentUseFile/out/production/ManageStudentUseFile/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../ManageStudentUseFile/out/production/ManageStudentUseFile/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManageDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/ManageDocument.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2iJlq7K76KXI6t1MsUue3DXiWrt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CodeJavaCG/Module2/CodeGym/src/ObjectOrientedProgram/BookManage&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8256d9ad-f82f-4cc4-acf3-216ffee8b8ee" name="Changes" comment="" />
+      <created>1719216748893</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719216748893</updated>
+      <workItem from="1719216749937" duration="181000" />
+      <workItem from="1719217308541" duration="3000" />
+      <workItem from="1719217411853" duration="78000" />
+      <workItem from="1719217543082" duration="45000" />
+      <workItem from="1719217625179" duration="45000" />
+      <workItem from="1719217728385" duration="84000" />
+      <workItem from="1719217852216" duration="11000" />
+      <workItem from="1719217906883" duration="110000" />
+      <workItem from="1719218047025" duration="388000" />
+      <workItem from="1719218560923" duration="53000" />
+      <workItem from="1719218679148" duration="575000" />
+      <workItem from="1719219291323" duration="7000" />
+      <workItem from="1719219465143" duration="20000" />
+      <workItem from="1719219535832" duration="620000" />
+      <workItem from="1719220205012" duration="280000" />
+      <workItem from="1719220817390" duration="139000" />
+      <workItem from="1719220984031" duration="258000" />
+      <workItem from="1719221333563" duration="483000" />
+      <workItem from="1719222389322" duration="89000" />
+      <workItem from="1719222489233" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -61,7 +61,7 @@ public class ManageStudent {
             System.out.println(o.toString());
         }
     }
-
+/*
     public void ReadData() {
         String id, name;
         int age;
@@ -88,6 +88,33 @@ public class ManageStudent {
             throw new RuntimeException(e);
         }
     }
+ */
+    public void ReadData() {
+        String id, name;
+        int age;
+
+        try{
+            BufferedReader br = new BufferedReader(new FileReader("data.csv"));
+            String world = br.readLine();
+
+            while (world != null){
+                String[] value = world.split(",");
+
+                id = value[0];
+                name =value[1];
+                age = Integer.parseInt(value[2]);
+
+                list.add(new Student(id, name, age));
+                world = br.readLine();
+
+            }
+            br.close();
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public void SaveData(){
         try{
             BufferedWriter bw = new BufferedWriter(new FileWriter("data.csv"));
