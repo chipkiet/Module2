@@ -1,0 +1,8 @@
+Student{id='0001', name='Nguyen Van A', age=20}
+Student{id='0002', name='Nguyen Van B', age=25}
+Student{id='0003', name='Nguyen C', age=20}
+Student{id='0004', name='Van D', age=25}
+Student{id='0005', name='Nguyen Van QQ', age=20}
+Student{id='0006', name='Le Ba', age=25}
+Student{id='0007', name='Van Minh Kiet', age=19}
+Student{id='0008', name='Van Minh Ram', age=15}
