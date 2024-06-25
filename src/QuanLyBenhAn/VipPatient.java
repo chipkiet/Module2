@@ -37,4 +37,9 @@ public class VipPatient extends Patient{
                 ", reason='" + reason + '\'' +
                 '}';
     }
+
+    @Override
+    public double calCostOfNormalPatient() {
+        return 0;
+    }
 }

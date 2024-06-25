@@ -25,4 +25,9 @@ public class NormalPatient extends Patient {
                 "cost=" + cost +
                 '}';
     }
+
+    @Override
+    public double calCostOfNormalPatient() {
+        return 0;
+    }
 }

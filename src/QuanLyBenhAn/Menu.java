@@ -20,7 +20,6 @@ public class Menu {
                     mp.AddPatient();
                     break;
                 case "2":
-                    System.out.println("Sau khi xoa xong, hay nhap 1- c de thuc hien phep xoa len csv");
                     System.out.println("Input the patient Id you need to delete :");
                     String id = sc.nextLine();
                     mp.RemovePatient(id);

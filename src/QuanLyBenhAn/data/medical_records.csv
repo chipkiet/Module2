@@ -1,0 +1,2 @@
+NormalPatient{Patient{stt=1, id='BA-1001', name='cHIP', dayIn=21, dayOut=23, reason='Ngu'cost=6000}
+VipPatient{vip='3', vipTime=5, stt=2, name='AHA', id='BA-1001', dayIn=21, dayOut=23, reason='ngu'}

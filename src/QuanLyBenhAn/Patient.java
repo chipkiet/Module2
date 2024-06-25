@@ -15,6 +15,7 @@ public abstract class Patient {
         this.dayOut = dayOut;
         this.reason = reason;
     }
+    public abstract double calCostOfNormalPatient();
 
     public int getStt() {
         return stt;
