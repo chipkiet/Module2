@@ -1,8 +1,10 @@
+import java.util.Date;
+
 public class VipPatient extends Patient{
     private String vip;
     private int vipTime;
 
-    public VipPatient(int stt, String id, String name, int dayIn, int dayOut, String reason, String vip, int vipTime){
+    public VipPatient(int stt, String id, String name, Date dayIn, Date dayOut, String reason, String vip, int vipTime){
         super(stt, id, name, dayIn, dayOut, reason);
         this.vip = vip;
         this.vipTime = vipTime;

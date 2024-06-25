@@ -4,7 +4,9 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -22,6 +24,8 @@ public class ManagePatient {
 
     public void AddPatient() {
         Scanner sc = new Scanner(System.in);
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        sdf.setLenient(false);
 
         System.out.println("a: Normal Patient Add");
         System.out.println("b: VIP Patient Add");
@@ -33,8 +37,8 @@ public class ManagePatient {
 
         switch (type) {
             case "a":
-                    boolean Value = false;
-                    while (!Value) {
+                    boolean ValueA = false;
+                    while (!ValueA) {
                         try {
 
                             System.out.println("Nhap so thu tu cua benh nhan  :");
@@ -51,22 +55,24 @@ public class ManagePatient {
                             System.out.println("NHap ten cua benh nhan : ");
                             String name = sc.nextLine();
                             System.out.println("Nhap ngay nhap vien cua benh nhan:");
-                            int dayIn = sc.nextInt();
+                            String dayin = sc.nextLine();
+                            Date dateIn = sdf.parse(dayin);
                             sc.nextLine();
                             System.out.println("Nhap ngay xuat vien cua benh nhan : ");
-                            int dayOut = sc.nextInt();
+                            String dayout = sc.nextLine();
+                            Date dateOut = sdf.parse(dayout);
                             sc.nextLine();
                             System.out.println("Nhap ly do nhap vien :");
                             String reason = sc.nextLine();
                             System.out.println("Nhap vao phi nhap vien :");
                             int cost = sc.nextInt();
                             sc.nextLine();
-                            Patient pNormal = new NormalPatient(stt, id, name, dayIn, dayOut, reason, cost);
+                            Patient pNormal = new NormalPatient(stt, id, name, dateIn, dateOut, reason, cost);
                             list.add(pNormal);
 
                             saveToFile();
 
-                            Value = true;
+                            ValueA = true;
                         }catch (DuplicateMedicalRecordException e){
                             System.out.println(e.getMessage() + "Input again");
                         }catch (Exception e){
@@ -79,31 +85,46 @@ public class ManagePatient {
 
 
             case "b":
-                System.out.println("Nhap so thu tu cua benh nhan :");
-                int stt1 = sc.nextInt();
-                sc.nextLine();
-                System.out.println("Nhap ma benh an cua benh nhan (BA-XXX) : ");
-                String id1 = sc.nextLine();
+                boolean ValueB = false;
+                while (!ValueB) {
+                    try {
+                        System.out.println("Nhap so thu tu cua benh nhan :");
+                        int stt1 = sc.nextInt();
+                        sc.nextLine();
+                        System.out.println("Nhap ma benh an cua benh nhan (BA-XXX) : ");
+                        String id1 = sc.nextLine();
+                        if (isIdExist(id1)) {
+                            throw new DuplicateMedicalRecordException("Benh an da ton tai: ");
+                        }
 
-
-                System.out.println("NHap ten cua benh nhan : ");
-                String name1 = sc.nextLine();
-                System.out.println("Nhap ngay nhap vien cua benh nhan:");
-                int dayIn1 = sc.nextInt();
-                sc.nextLine();
-                System.out.println("Nhap ngay xuat vien cua benh nhan : ");
-                int dayOut1 = sc.nextInt();
-                sc.nextLine();
-                System.out.println("Nhap ly do nhap vien :");
-                String reason1 = sc.nextLine();
-                System.out.println("Nhap loai Vip :");
-                String vip = sc.nextLine();
-                System.out.println("Nhap thoi gian Vip hoat dong : ");
-                int vipTime = sc.nextInt();
-                sc.nextLine();
-                Patient pVip = new VipPatient(stt1, id1, name1, dayIn1, dayOut1, reason1, vip, vipTime);
-                list.add(pVip);
-                saveToFile();
+                        System.out.println("NHap ten cua benh nhan : ");
+                        String name1 = sc.nextLine();
+                        System.out.println("Nhap ngay nhap vien cua benh nhan:");
+                        String dayin1 = sc.nextLine();
+                        Date dateIn1 = sdf.parse(dayin1);
+                        sc.nextLine();
+                        System.out.println("Nhap ngay xuat vien cua benh nhan : ");
+                        String dayout1 = sc.nextLine();
+                        Date dateOut1 = sdf.parse(dayout1);
+                        sc.nextLine();
+                        System.out.println("Nhap ly do nhap vien :");
+                        String reason1 = sc.nextLine();
+                        System.out.println("Nhap loai Vip :");
+                        String vip = sc.nextLine();
+                        System.out.println("Nhap thoi gian Vip hoat dong : ");
+                        int vipTime = sc.nextInt();
+                        sc.nextLine();
+                        Patient pVip = new VipPatient(stt1, id1, name1, dateIn1, dateOut1, reason1, vip, vipTime);
+                        list.add(pVip);
+                        saveToFile();
+                        ValueB = true;
+                    }catch (DuplicateMedicalRecordException e){
+                        System.out.println(e.getMessage() + "Input again");
+                    }catch (Exception e){
+                        System.out.println("Input again cause invalid or error");
+                        sc.nextLine();
+                    }
+                    }
                 break;
 
         }

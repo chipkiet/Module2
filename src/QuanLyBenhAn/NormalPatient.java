@@ -1,7 +1,9 @@
+import java.util.Date;
+
 public class NormalPatient extends Patient {
     private int cost;
 
-    public NormalPatient(int stt, String id, String name, int dayIn, int dayOut, String reason, int cost) {
+    public NormalPatient(int stt, String id, String name, Date dayIn, Date dayOut, String reason, int cost) {
         super(stt, id, name, dayIn, dayOut, reason);
         this.cost = cost;
     }

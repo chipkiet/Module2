@@ -1,2 +1,1 @@
-NormalPatient{Patient{stt=1, id='BA-1001', name='cHIP', dayIn=21, dayOut=23, reason='Ngu'cost=6000}
-VipPatient{vip='3', vipTime=5, stt=2, name='AHA', id='BA-1001', dayIn=21, dayOut=23, reason='ngu'}
+VipPatient{vip='5', vipTime=6, stt=1, name='VAN MINH KIET', id='BA-1001', dayIn=Thu Dec 21 00:00:00 ICT 2023, dayOut=Fri Dec 22 00:00:00 ICT 2023, reason='NGU'}

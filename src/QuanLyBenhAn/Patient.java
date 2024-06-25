@@ -1,13 +1,15 @@
+import java.util.Date;
+
 public abstract class Patient {
     protected int stt;
     protected String id;
     protected String name;
-    protected int dayIn;
-    protected int dayOut;
+    protected Date dayIn;
+    protected Date dayOut;
     protected String reason;
 
 
-    public Patient(int stt, String id, String name, int dayIn, int dayOut, String reason) {
+    public Patient(int stt, String id, String name, Date dayIn, Date dayOut, String reason) {
         this.stt = stt;
         this.id = id;
         this.name = name;
@@ -41,20 +43,20 @@ public abstract class Patient {
         this.name = name;
     }
 
-    public int getDayIn() {
-        return dayIn;
-    }
-
-    public void setDayIn(int dayIn) {
-        this.dayIn = dayIn;
-    }
-
-    public int getDayOut() {
+    public Date getDayOut() {
         return dayOut;
     }
 
-    public void setDayOut(int dayOut) {
+    public void setDayOut(Date dayOut) {
         this.dayOut = dayOut;
+    }
+
+    public Date getDayIn() {
+        return dayIn;
+    }
+
+    public void setDayIn(Date dayIn) {
+        this.dayIn = dayIn;
     }
 
     public String getReason() {
